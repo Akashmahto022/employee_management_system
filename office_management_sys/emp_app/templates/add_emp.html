@@ -18,6 +18,45 @@
         <a class="btn btn-primary" href="{% url 'add_emp' %}" role="button">Add an Employee</a>
         <a class="btn btn-primary" href="{% url 'remove_emp' %}" role="button">Remove an Employee</a>
         <a class="btn btn-primary" href="{% url 'filter_emp' %}" role="button">Filter Employee Employee</a>
+
+        <div class="mt-4">
+          <form action='/add_emp' method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="first_name" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="first_name" value={{first_name}}>
+            </div>
+            <div class="mb-3">
+              <label for="last_name" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="last_name" value={{last_name}}>
+            </div>
+            <div class="mb-3">
+              <label for="dept" class="form-label">Department</label>
+              <input type="text" class="form-control" id="dept" value={{dept}}>
+            </div>
+            <div class="mb-3">
+              <label for="Salary" class="form-label">Salary</label>
+              <input type="number" class="form-control" id="Salary" value={{salary}}>
+            </div>
+            <div class="mb-3">
+              <label for="Bonus" class="form-label">Bonus</label>
+              <input type="number" class="form-control" id="Bonus" value={{bonus}}>
+            </div>
+            <div class="mb-3">
+              <label for="Role" class="form-label">Role</label>
+              <input type="text" class="form-control" id="Role" value={{role}}>
+            </div>
+            <div class="mb-3">
+              <label for="Phone" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="Phone" value={{phone}}>
+            </div>
+            <div class="mb-3">
+              <label for="Hire date:" class="form-label">Hire date:</label>
+              <input type="date" class="form-control" id="hire_date" value={{hire_Date}}>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
