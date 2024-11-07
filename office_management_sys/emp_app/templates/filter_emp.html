@@ -18,6 +18,27 @@
         <a class="btn btn-primary" href="{% url 'add_emp' %}" role="button">Add an Employee</a>
         <a class="btn btn-primary" href="{% url 'remove_emp' %}" role="button">Remove an Employee</a>
         <a class="btn btn-primary" href="{% url 'filter_emp' %}" role="button">Filter Employee Employee</a>
+
+        <div class="mt-4">
+          <form action='/filter_emp' method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="name" class="form-label">Employee First/Last Name</label>
+              <input type="text" class="form-control" id="name" name="name" value={{name}}>
+            </div>
+            <div class="mb-3">
+              <label for="dept" class="form-label">Department</label>
+              <input type="text" class="form-control" id="dept" name="dept" value={{dept}}>
+            </div>
+            
+            <div class="mb-3">
+              <label for="Role" class="form-label">Role</label>
+              <input type="text" class="form-control" id="Role" name="role" value={{role}}>
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
       </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
