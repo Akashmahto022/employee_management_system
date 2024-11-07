@@ -24,35 +24,35 @@
             {% csrf_token %}
             <div class="mb-3">
               <label for="first_name" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="first_name" value={{first_name}}>
+              <input type="text" class="form-control" id="first_name" name="first_name" value={{first_name}}>
             </div>
             <div class="mb-3">
               <label for="last_name" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="last_name" value={{last_name}}>
+              <input type="text" class="form-control" id="last_name" name="last_name" value={{last_name}}>
             </div>
             <div class="mb-3">
               <label for="dept" class="form-label">Department</label>
-              <input type="text" class="form-control" id="dept" value={{dept}}>
+              <input type="text" class="form-control" id="dept" name="dept" value={{dept}}>
             </div>
             <div class="mb-3">
               <label for="Salary" class="form-label">Salary</label>
-              <input type="number" class="form-control" id="Salary" value={{salary}}>
+              <input type="number" class="form-control" id="Salary" name="salary" value={{salary}}>
             </div>
             <div class="mb-3">
               <label for="Bonus" class="form-label">Bonus</label>
-              <input type="number" class="form-control" id="Bonus" value={{bonus}}>
+              <input type="number" class="form-control" id="Bonus" name="bonus" value={{bonus}}>
             </div>
             <div class="mb-3">
               <label for="Role" class="form-label">Role</label>
-              <input type="text" class="form-control" id="Role" value={{role}}>
+              <input type="text" class="form-control" id="Role" name="role" value={{role}}>
             </div>
             <div class="mb-3">
               <label for="Phone" class="form-label">Phone</label>
-              <input type="number" class="form-control" id="Phone" value={{phone}}>
+              <input type="number" class="form-control" id="Phone" name="phone" value={{phone}}>
             </div>
             <div class="mb-3">
               <label for="Hire date:" class="form-label">Hire date:</label>
-              <input type="date" class="form-control" id="hire_date" value={{hire_Date}}>
+              <input type="date" class="form-control" id="hire_date" name="hire_date" value={{hire_date}}>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -70,3 +70,4 @@
     -->
   </body>
 </html>
+
